@@ -70,6 +70,8 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    transition: all .3s ease;
 }
 
 .todo li {
@@ -85,10 +87,6 @@ form button:hover {
     border: none;
 }
 
-.trash-btn i, .complete-btn i {
-    
-}
-
 .complete-btn{
     background-color: rgb(73, 204, 73);
 }
@@ -96,3 +94,25 @@ form button:hover {
 .trash-btn {
     background-color: #ff6f47;
 }
+
+.todo-item {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 .5rem;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+/*Animations*/
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+/*END Animations*/
